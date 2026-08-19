@@ -1,0 +1,23 @@
+name: Request data test
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
+jobs:
+    request-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v7
+            
+            - name: Setup python
+              uses: actions/setup-python@v7
+              with:
+                python-version: '3.12.10'
+            
+            - name: Install dependencies
+              run: pip install -r requirements.txt
+            
+            - name: Run tests
+              run: pytest
