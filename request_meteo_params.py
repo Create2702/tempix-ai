@@ -140,5 +140,5 @@ hourly_data["et0_fao_evapotranspiration"] = hourly_et0_fao_evapotranspiration
 hourly_data["vapour_pressure_deficit"] = hourly_vapour_pressure_deficit
 
 hourly_dataframe = pd.DataFrame(data = hourly_data)
-hourly_dataframe.to_csv("meteo_parametes.csv")
+hourly_dataframe.to_csv("meteo_parameters.csv")
 print("Successfully")
