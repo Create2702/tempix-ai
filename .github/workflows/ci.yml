@@ -1,9 +1,9 @@
 name: Request data test
 on:
     push:
-        branches: [ main ]
+        branches: [ main, tempix_neural_network ]
     pull_request:
-        branches: [ main ]
+        branches: [ main, tempix_neural_network ]
 jobs:
     request-test:
         runs-on: ubuntu-latest
